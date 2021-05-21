@@ -1,19 +1,28 @@
 package stepdefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.support.ui.Select;
+import pages.RegisterPage;
+import utilities.ConfigReader;
+import utilities.Driver;
 
 public class US_002StepDefinitions {
+
+    RegisterPage registerPage = new RegisterPage();
+
     @Given("User goes to GMi Bank Homepage")
     public void user_goes_to_g_mi_bank_homepage() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Driver.getDriver().get("https://gmibank.com/");
     }
 
-    @Given("User clicks the Register from dropdown menu")
-    public void user_clicks_the_register_from_dropdown_menu() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @And("User clicks the {string} from dropdown menu")
+    public void userClicksTheFromDropdownMenu(String menu) throws InterruptedException {
+
+        registerPage.dropdownMenu.click();
+        Thread.sleep(2000);
+        registerPage.register.click();
     }
 
     @Given("User clicks on the SSN text box")
@@ -33,5 +42,6 @@ public class US_002StepDefinitions {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
+
 
 }
