@@ -1,19 +1,17 @@
 [
   {
-    "line": 1,
+    "line": 3,
     "elements": [
       {
-        "start_timestamp": "2021-05-22T11:26:22.334Z",
-        "line": 3,
-        "name": "TC_001 Any field on the registration page should not be left blank",
+        "line": 4,
+        "name": "",
         "description": "",
-        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-001-any-field-on-the-registration-page-should-not-be-left-blank",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 19889000000,
+              "duration": 14405000000,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 292000000,
+              "duration": 234000000,
               "status": "passed"
             },
             "line": 6,
@@ -40,13 +38,45 @@
               "location": "stepdefinitions.US_002StepDefinitions.userClicksTheFromDropdownMenu(java.lang.String)"
             },
             "keyword": "And "
-          },
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-22T18:56:11.088Z",
+        "before": [
           {
             "result": {
-              "duration": 107000000,
               "status": "passed"
             },
-            "line": 7,
+            "match": {
+              "location": "stepdefinitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "TC_001 Any field on the registration page should not be left blank",
+        "description": "",
+        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-001-any-field-on-the-registration-page-should-not-be-left-blank",
+        "after": [
+          {
+            "result": {
+              "duration": 2444000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 98000000,
+              "status": "passed"
+            },
+            "line": 11,
             "name": "User enter anything to SSN text box and presses the enter key",
             "match": {
               "location": "stepdefinitions.US_002StepDefinitions.user_enter_anything_to_ssn_text_box_and_presses_the_enter_key()"
@@ -55,19 +85,869 @@
           },
           {
             "result": {
-              "duration": 2102000000,
+              "duration": 71000000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "User should see \"ssnMessage\" message",
+            "line": 12,
+            "name": "User should see the SSN error message \"enter_ssn_message\" message",
             "match": {
               "arguments": [
                 {
-                  "val": "\"ssnMessage\"",
+                  "val": "\"enter_ssn_message\"",
+                  "offset": 38
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userShouldSeeTheSSNErrorMessageMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13213000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User goes to GMi Bank Homepage",
+            "match": {
+              "location": "stepdefinitions.US_002StepDefinitions.user_goes_to_g_mi_bank_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 220000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the \"Register\" from dropdown menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Register\"",
                   "offset": 16
                 }
               ],
-              "location": "stepdefinitions.US_002StepDefinitions.user_should_see_message(java.lang.String)"
+              "location": "stepdefinitions.US_002StepDefinitions.userClicksTheFromDropdownMenu(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-22T18:56:28.458Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "TC_002 Any field on the registration page should not be left blank",
+        "description": "",
+        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-002-any-field-on-the-registration-page-should-not-be-left-blank",
+        "after": [
+          {
+            "result": {
+              "duration": 2298000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 74000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enter anything to Firstname text box and presses the enter key",
+            "match": {
+              "location": "stepdefinitions.US_002StepDefinitions.userEnterAnythingToFirstnameTextBoxAndPressesTheEnterKey()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should see the Firstname error message \"enter_firstname_message\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"enter_firstname_message\"",
+                  "offset": 44
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userShouldSeeTheFirstnameErrorMessageMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11899000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User goes to GMi Bank Homepage",
+            "match": {
+              "location": "stepdefinitions.US_002StepDefinitions.user_goes_to_g_mi_bank_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 221000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the \"Register\" from dropdown menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Register\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userClicksTheFromDropdownMenu(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-22T18:56:44.347Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "TC_002 Any field on the registration page should not be left blank",
+        "description": "",
+        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-002-any-field-on-the-registration-page-should-not-be-left-blank",
+        "after": [
+          {
+            "result": {
+              "duration": 2286000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 85000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User enter anything to Lastname text box and presses the enter key",
+            "match": {
+              "location": "stepdefinitions.US_002StepDefinitions.userEnterAnythingToLastnameTextBoxAndPressesTheEnterKey()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User should see the Lastname error message \"enter_lastname_message\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"enter_lastname_message\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userShouldSeeTheLastnameErrorMessageMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 18135000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User goes to GMi Bank Homepage",
+            "match": {
+              "location": "stepdefinitions.US_002StepDefinitions.user_goes_to_g_mi_bank_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 252000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the \"Register\" from dropdown menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Register\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userClicksTheFromDropdownMenu(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-22T18:56:58.920Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "TC_002 Any field on the registration page should not be left blank",
+        "description": "",
+        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-002-any-field-on-the-registration-page-should-not-be-left-blank",
+        "after": [
+          {
+            "result": {
+              "duration": 2287000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 88000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User enter anything to Adress text box and presses the enter key",
+            "match": {
+              "location": "stepdefinitions.US_002StepDefinitions.userEnterAnythingToAdressTextBoxAndPressesTheEnterKey()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User should see the Adress error message \"enter_adress_message\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"enter_adress_message\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userShouldSeeTheAdressErrorMessageMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12965000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User goes to GMi Bank Homepage",
+            "match": {
+              "location": "stepdefinitions.US_002StepDefinitions.user_goes_to_g_mi_bank_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 220000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the \"Register\" from dropdown menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Register\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userClicksTheFromDropdownMenu(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-22T18:57:19.728Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "TC_002 Any field on the registration page should not be left blank",
+        "description": "",
+        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-002-any-field-on-the-registration-page-should-not-be-left-blank",
+        "after": [
+          {
+            "result": {
+              "duration": 2308000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 76000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User enter anything to Phone Number text box and presses the enter key",
+            "match": {
+              "location": "stepdefinitions.US_002StepDefinitions.userEnterAnythingToPhoneNumberTextBoxAndPressesTheEnterKey()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User should see the Phone Number error message \"enter_phone_number_message\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"enter_phone_number_message\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userShouldSeeThePhoneNumberErrorMessageMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12202000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User goes to GMi Bank Homepage",
+            "match": {
+              "location": "stepdefinitions.US_002StepDefinitions.user_goes_to_g_mi_bank_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 209000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the \"Register\" from dropdown menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Register\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userClicksTheFromDropdownMenu(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-22T18:57:35.352Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "TC_002 Any field on the registration page should not be left blank",
+        "description": "",
+        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-002-any-field-on-the-registration-page-should-not-be-left-blank",
+        "after": [
+          {
+            "result": {
+              "duration": 2332000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 67000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User enter anything to Username text box and presses the enter key",
+            "match": {
+              "location": "stepdefinitions.US_002StepDefinitions.userEnterAnythingToUsernameTextBoxAndPressesTheEnterKey()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User should see the Username error message \"enter_username_message\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"enter_username_message\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userShouldSeeTheUsernameErrorMessageMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 22553000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User goes to GMi Bank Homepage",
+            "match": {
+              "location": "stepdefinitions.US_002StepDefinitions.user_goes_to_g_mi_bank_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 257000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the \"Register\" from dropdown menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Register\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userClicksTheFromDropdownMenu(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-22T18:57:50.218Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "TC_002 Any field on the registration page should not be left blank",
+        "description": "",
+        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-002-any-field-on-the-registration-page-should-not-be-left-blank",
+        "after": [
+          {
+            "result": {
+              "duration": 2334000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 94000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User enter anything to Email text box and presses the enter key",
+            "match": {
+              "location": "stepdefinitions.US_002StepDefinitions.userEnterAnythingToEmailTextBoxAndPressesTheEnterKey()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User should see the Email error message \"enter_email_message\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"enter_email_message\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userShouldSeeTheEmailErrorMessageMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 15189000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User goes to GMi Bank Homepage",
+            "match": {
+              "location": "stepdefinitions.US_002StepDefinitions.user_goes_to_g_mi_bank_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 232000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the \"Register\" from dropdown menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Register\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userClicksTheFromDropdownMenu(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-22T18:58:15.510Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "TC_002 Any field on the registration page should not be left blank",
+        "description": "",
+        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-002-any-field-on-the-registration-page-should-not-be-left-blank",
+        "after": [
+          {
+            "result": {
+              "duration": 2299000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 80000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User enter anything to New password text box and presses the enter key",
+            "match": {
+              "location": "stepdefinitions.US_002StepDefinitions.userEnterAnythingToNewPasswordTextBoxAndPressesTheEnterKey()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User should see the New password error message \"enter_new_password_message\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"enter_new_password_message\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userShouldSeeTheNewPasswordErrorMessageMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 23195000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User goes to GMi Bank Homepage",
+            "match": {
+              "location": "stepdefinitions.US_002StepDefinitions.user_goes_to_g_mi_bank_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 255000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the \"Register\" from dropdown menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Register\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userClicksTheFromDropdownMenu(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-22T18:58:33.355Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "TC_002 Any field on the registration page should not be left blank",
+        "description": "",
+        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-002-any-field-on-the-registration-page-should-not-be-left-blank",
+        "after": [
+          {
+            "result": {
+              "duration": 2342000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 78000000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User enter anything to New password confirmation text box and presses the enter key",
+            "match": {
+              "location": "stepdefinitions.US_002StepDefinitions.userEnterAnythingToNewPasswordConfirmationTextBoxAndPressesTheEnterKey()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User should see the New password confirmation error message \"enter_new_password_confirmation_message\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"enter_new_password_confirmation_message\"",
+                  "offset": 60
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userShouldSeeTheNewPasswordConfirmationErrorMessageMessage(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -84,6 +964,15 @@
     "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/US_002.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@register",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

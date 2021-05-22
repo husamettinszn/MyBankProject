@@ -21,5 +21,33 @@ public class RegisterPage {
     @FindBy(name = "ssn")
     public WebElement ssnTextBox;
 
+    @FindBy(name = "firstname")
+    public WebElement firstnameTextBox;
+
+    @FindBy(name = "lastname")
+    public WebElement lastnameTextBox;
+
+    @FindBy(name = "address")
+    public WebElement addressTextBox;
+
+    @FindBy(name = "mobilephone")
+    public WebElement mobilephoneTextBox;
+
+    @FindBy(name = "username")
+    public WebElement usernameTextBox;
+
+    @FindBy(name = "email")
+    public WebElement emailTextBox;
+
+    @FindBy(name = "firstPassword")
+    public WebElement firstPasswordTextBox;
+
+    @FindBy(name = "secondPassword")
+    public WebElement secondPasswordTextBox;
+
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[1]")
+    public WebElement errorMessage;
+
+
 }
 
