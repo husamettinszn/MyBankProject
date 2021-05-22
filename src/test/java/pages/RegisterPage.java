@@ -15,7 +15,7 @@ public class RegisterPage {
     @FindBy(xpath = "(//a[@class='dropdown-toggle nav-link'])[2]")
     public WebElement dropdownMenu;
 
-    @FindBy(xpath = "//a[@class='dropdown-item active']")
+    @FindBy(xpath = "(//a[@class='dropdown-item'])[2]")
     public WebElement register;
 
     @FindBy(name = "ssn")
