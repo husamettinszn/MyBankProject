@@ -1,66 +1,75 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="168.368">
-<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_001 Any field on the registration page should not be left blank" time="17.34">
-<system-out><![CDATA[Given User goes to GMi Bank Homepage........................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="126.649">
+<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_010 SSN number cannot be of any chars nor spec chars except &quot;-&quot;" time="14.41">
+<system-out><![CDATA[Given User goes to "GmiBank_url" Homepage...................................passed
 And User clicks the "Register" from dropdown menu...........................passed
-And User enter anything to SSN text box and presses the enter key...........passed
-Then User should see the SSN error message "enter_ssn_message" message......passed
+And User enter "invalid_ssn1" to SSN textbox................................passed
+And User preses Tab key.....................................................passed
+Then User sees invalid Ssn message "invalid_ssn_message"....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_002 Any field on the registration page should not be left blank" time="15.873">
-<system-out><![CDATA[Given User goes to GMi Bank Homepage........................................passed
+<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_010 SSN number cannot be of any chars nor spec chars except &quot;-&quot; 2" time="12.199">
+<system-out><![CDATA[Given User goes to "GmiBank_url" Homepage...................................passed
 And User clicks the "Register" from dropdown menu...........................passed
-And User enter anything to Firstname text box and presses the enter key.....passed
-Then User should see the Firstname error message "enter_firstname_message" message.passed
+And User enter "invalid_ssn2" to SSN textbox................................passed
+And User preses Tab key.....................................................passed
+Then User sees invalid Ssn message "invalid_ssn_message"....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_002 Any field on the registration page should not be left blank 2" time="14.556">
-<system-out><![CDATA[Given User goes to GMi Bank Homepage........................................passed
+<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_010 SSN number cannot be of any chars nor spec chars except &quot;-&quot; 3" time="15.955">
+<system-out><![CDATA[Given User goes to "GmiBank_url" Homepage...................................passed
 And User clicks the "Register" from dropdown menu...........................passed
-And User enter anything to Lastname text box and presses the enter key......passed
-Then User should see the Lastname error message "enter_lastname_message" message.passed
+And User enter "invalid_ssn3" to SSN textbox................................passed
+And User preses Tab key.....................................................passed
+Then User sees invalid Ssn message "invalid_ssn_message"....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_002 Any field on the registration page should not be left blank 3" time="20.794">
-<system-out><![CDATA[Given User goes to GMi Bank Homepage........................................passed
+<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_010 SSN number cannot be of any chars nor spec chars except &quot;-&quot; 4" time="13.099">
+<system-out><![CDATA[Given User goes to "GmiBank_url" Homepage...................................passed
 And User clicks the "Register" from dropdown menu...........................passed
-And User enter anything to Adress text box and presses the enter key........passed
-Then User should see the Adress error message "enter_adress_message" message.passed
+And User enter "invalid_ssn4" to SSN textbox................................passed
+And User preses Tab key.....................................................passed
+Then User sees invalid Ssn message "invalid_ssn_message"....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_002 Any field on the registration page should not be left blank 4" time="15.607">
-<system-out><![CDATA[Given User goes to GMi Bank Homepage........................................passed
+<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_010 SSN number cannot be of any chars nor spec chars except &quot;-&quot; 5" time="16.901">
+<system-out><![CDATA[Given User goes to "GmiBank_url" Homepage...................................passed
 And User clicks the "Register" from dropdown menu...........................passed
-And User enter anything to Phone Number text box and presses the enter key..passed
-Then User should see the Phone Number error message "enter_phone_number_message" message.passed
+And User enter "invalid_ssn5" to SSN textbox................................passed
+And User preses Tab key.....................................................passed
+Then User sees invalid Ssn message "invalid_ssn_message"....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_002 Any field on the registration page should not be left blank 5" time="14.851">
-<system-out><![CDATA[Given User goes to GMi Bank Homepage........................................passed
+<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_010 SSN number cannot be of any chars nor spec chars except &quot;-&quot; 6" time="12.297">
+<system-out><![CDATA[Given User goes to "GmiBank_url" Homepage...................................passed
 And User clicks the "Register" from dropdown menu...........................passed
-And User enter anything to Username text box and presses the enter key......passed
-Then User should see the Username error message "enter_username_message" message.passed
+And User enter "invalid_ssn6" to SSN textbox................................passed
+And User preses Tab key.....................................................passed
+Then User sees invalid Ssn message "invalid_ssn_message"....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_002 Any field on the registration page should not be left blank 6" time="25.275">
-<system-out><![CDATA[Given User goes to GMi Bank Homepage........................................passed
+<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_010 SSN number cannot be of any chars nor spec chars except &quot;-&quot; 7" time="13.646">
+<system-out><![CDATA[Given User goes to "GmiBank_url" Homepage...................................passed
 And User clicks the "Register" from dropdown menu...........................passed
-And User enter anything to Email text box and presses the enter key.........passed
-Then User should see the Email error message "enter_email_message" message..passed
+And User enter "invalid_ssn7" to SSN textbox................................passed
+And User preses Tab key.....................................................passed
+Then User sees invalid Ssn message "invalid_ssn_message"....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_002 Any field on the registration page should not be left blank 7" time="17.832">
-<system-out><![CDATA[Given User goes to GMi Bank Homepage........................................passed
+<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_010 SSN number cannot be of any chars nor spec chars except &quot;-&quot; 8" time="14.902">
+<system-out><![CDATA[Given User goes to "GmiBank_url" Homepage...................................passed
 And User clicks the "Register" from dropdown menu...........................passed
-And User enter anything to New password text box and presses the enter key..passed
-Then User should see the New password error message "enter_new_password_message" message.passed
+And User enter "invalid_ssn8" to SSN textbox................................passed
+And User preses Tab key.....................................................passed
+Then User sees invalid Ssn message "invalid_ssn_message"....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_002 Any field on the registration page should not be left blank 8" time="25.901">
-<system-out><![CDATA[Given User goes to GMi Bank Homepage........................................passed
+<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_010 SSN number cannot be of any chars nor spec chars except &quot;-&quot; 9" time="12.896">
+<system-out><![CDATA[Given User goes to "GmiBank_url" Homepage...................................passed
 And User clicks the "Register" from dropdown menu...........................passed
-And User enter anything to New password confirmation text box and presses the enter key.passed
-Then User should see the New password confirmation error message "enter_new_password_confirmation_message" message.passed
+And User enter "invalid_ssn9" to SSN textbox................................passed
+And User preses Tab key.....................................................passed
+Then User sees invalid Ssn message "invalid_ssn_message"....................passed
 ]]></system-out>
 </testcase>
 </testsuite>

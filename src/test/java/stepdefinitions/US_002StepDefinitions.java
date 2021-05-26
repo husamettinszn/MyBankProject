@@ -5,6 +5,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import pages.RegisterPage;
 import utilities.ConfigReader;
@@ -15,10 +16,11 @@ import javax.swing.*;
 public class US_002StepDefinitions {
 
     RegisterPage registerPage = new RegisterPage();
+    Actions actions = new Actions(Driver.getDriver());
 
-    @Given("User goes to GMi Bank Homepage")
-    public void user_goes_to_g_mi_bank_homepage() {
-        Driver.getDriver().get("https://gmibank.com/");
+    @Given("User goes to {string} Homepage")
+    public void userGoesToHomepage(String GmiBank_url) {
+        Driver.getDriver().get(ConfigReader.getProperty(GmiBank_url));
     }
 
     @And("User clicks the {string} from dropdown menu")
@@ -125,5 +127,23 @@ public class US_002StepDefinitions {
     @Then("User should see the New password confirmation error message {string} message")
     public void userShouldSeeTheNewPasswordConfirmationErrorMessageMessage(String enter_new_password_confirmation_message) {
         Assert.assertEquals(ConfigReader.getProperty(enter_new_password_confirmation_message), registerPage.errorMessage.getText());
+    }
+
+    @And("User enter {string} to SSN textbox.")
+    public void userEnterToSSNTextbox(String invalid_ssn) {
+        registerPage.ssnTextBox.sendKeys(ConfigReader.getProperty(invalid_ssn));
+    }
+
+    @And("User preses Tab key.")
+    public void userPresesTabKey() {
+        actions.sendKeys(Keys.TAB).perform();
+
+    }
+
+    @Then("User sees invalid Ssn message {string}")
+    public void userSeesInvalidSsnMessage(String invalid_ssn_message) {
+        System.out.println(registerPage.errorMessage.getText());
+        Assert.assertEquals(ConfigReader.getProperty(invalid_ssn_message), registerPage.errorMessage.getText());
+
     }
 }

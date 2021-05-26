@@ -1,8 +1,8 @@
 
-@register
+
 Feature: US_002 System should not allow anyone to register with invalid credentials
   Background:
-    Given User goes to GMi Bank Homepage
+    Given User goes to "GmiBank_url" Homepage
     And User clicks the "Register" from dropdown menu
 
 
@@ -42,5 +42,26 @@ Feature: US_002 System should not allow anyone to register with invalid credenti
   Scenario: TC_009 Any field on the registration page should not be left blank
     And User enter anything to New password confirmation text box and presses the enter key
     Then User should see the New password confirmation error message "enter_new_password_confirmation_message" message
+  @register
+  Scenario Outline: TC_010 SSN number cannot be of any chars nor spec chars except "-"
+    And User enter "<invalid_ssn>" to SSN textbox.
 
-  Scenario: TC_010 SSN number cannot be of any chars nor spec chars except "-"
+    And User preses Tab key.
+    Then User sees invalid Ssn message "invalid_ssn_message"
+    Examples:
+      | invalid_ssn |
+      |invalid_ssn1 |
+      |invalid_ssn2 |
+      |invalid_ssn3 |
+      |invalid_ssn4 |
+      |invalid_ssn5 |
+      |invalid_ssn6 |
+      |invalid_ssn7 |
+      |invalid_ssn8 |
+      |invalid_ssn9 |
+
+
+
+
+
+
