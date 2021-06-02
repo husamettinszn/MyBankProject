@@ -59,7 +59,7 @@ Feature: US_002 System should not allow anyone to register with invalid credenti
       |invalid_ssn8 |
       |invalid_ssn9 |
 
-  @register
+
     Scenario Outline: TC_011 Mobilephone number cannot be of any chars nor spec chars except "-"
       And User enter "<invalid_phone_nummer>" to Phone number text box.
       And User preses Tab key.
@@ -76,6 +76,15 @@ Feature: US_002 System should not allow anyone to register with invalid credenti
         |invalid_phone_number8 |
         |invalid_phone_number9 |
         |invalid_phone_number10 |
+  @register
+    Scenario Outline: TC_012 email id cannot be created without "@" sign and "." extensions
+      And User enter "<invalid_email>" to email text box
+      And User preses Tab key.
+      Then User sees invalid email message "invalid_email_message"
+      Examples:
+        | invalid_email |
+        | invalid_email1 |
+        | invalid_email2 |
 
 
 
