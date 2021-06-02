@@ -158,4 +158,15 @@ public class US_002StepDefinitions {
     public void userSeesInvalidPhoneNumberMessage(String invalid_phone_number_message) {
        Assert.assertEquals(ConfigReader.getProperty(invalid_phone_number_message), registerPage.errorMessage.getText());
     }
+
+    @And("User enter {string} to email text box")
+    public void userEnterToEmailTextBox(String invalid_email) {
+        registerPage.emailTextBox.sendKeys(ConfigReader.getProperty(invalid_email));
+    }
+
+    @Then("User sees invalid email message {string}")
+    public void userSeesInvalidEmailMessage(String invalid_email_message) {
+        System.out.println(registerPage.errorMessage.getText());
+        Assert.assertEquals(ConfigReader.getProperty(invalid_email_message), registerPage.errorMessage.getText());
+    }
 }
