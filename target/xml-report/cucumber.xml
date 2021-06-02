@@ -1,75 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="126.649">
-<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_010 SSN number cannot be of any chars nor spec chars except &quot;-&quot;" time="14.41">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="160.244">
+<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_011 Mobilephone number cannot be of any chars nor spec chars except &quot;-&quot;" time="18.227">
 <system-out><![CDATA[Given User goes to "GmiBank_url" Homepage...................................passed
 And User clicks the "Register" from dropdown menu...........................passed
-And User enter "invalid_ssn1" to SSN textbox................................passed
+And User enter "invalid_phone_number1" to Phone number text box.............passed
 And User preses Tab key.....................................................passed
-Then User sees invalid Ssn message "invalid_ssn_message"....................passed
+Then User sees invalid phone number message "invalid_phone_number_message"..passed
 ]]></system-out>
 </testcase>
-<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_010 SSN number cannot be of any chars nor spec chars except &quot;-&quot; 2" time="12.199">
+<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_011 Mobilephone number cannot be of any chars nor spec chars except &quot;-&quot; 2" time="16.935">
 <system-out><![CDATA[Given User goes to "GmiBank_url" Homepage...................................passed
 And User clicks the "Register" from dropdown menu...........................passed
-And User enter "invalid_ssn2" to SSN textbox................................passed
+And User enter "invalid_phone_number2" to Phone number text box.............passed
 And User preses Tab key.....................................................passed
-Then User sees invalid Ssn message "invalid_ssn_message"....................passed
+Then User sees invalid phone number message "invalid_phone_number_message"..passed
 ]]></system-out>
 </testcase>
-<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_010 SSN number cannot be of any chars nor spec chars except &quot;-&quot; 3" time="15.955">
+<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_011 Mobilephone number cannot be of any chars nor spec chars except &quot;-&quot; 3" time="17.315">
 <system-out><![CDATA[Given User goes to "GmiBank_url" Homepage...................................passed
 And User clicks the "Register" from dropdown menu...........................passed
-And User enter "invalid_ssn3" to SSN textbox................................passed
+And User enter "invalid_phone_number3" to Phone number text box.............passed
 And User preses Tab key.....................................................passed
-Then User sees invalid Ssn message "invalid_ssn_message"....................passed
+Then User sees invalid phone number message "invalid_phone_number_message"..passed
 ]]></system-out>
 </testcase>
-<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_010 SSN number cannot be of any chars nor spec chars except &quot;-&quot; 4" time="13.099">
+<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_011 Mobilephone number cannot be of any chars nor spec chars except &quot;-&quot; 4" time="18.297">
 <system-out><![CDATA[Given User goes to "GmiBank_url" Homepage...................................passed
 And User clicks the "Register" from dropdown menu...........................passed
-And User enter "invalid_ssn4" to SSN textbox................................passed
+And User enter "invalid_phone_number4" to Phone number text box.............passed
 And User preses Tab key.....................................................passed
-Then User sees invalid Ssn message "invalid_ssn_message"....................passed
+Then User sees invalid phone number message "invalid_phone_number_message"..passed
 ]]></system-out>
 </testcase>
-<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_010 SSN number cannot be of any chars nor spec chars except &quot;-&quot; 5" time="16.901">
+<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_011 Mobilephone number cannot be of any chars nor spec chars except &quot;-&quot; 5" time="17.07">
 <system-out><![CDATA[Given User goes to "GmiBank_url" Homepage...................................passed
 And User clicks the "Register" from dropdown menu...........................passed
-And User enter "invalid_ssn5" to SSN textbox................................passed
+And User enter "invalid_phone_number5" to Phone number text box.............passed
 And User preses Tab key.....................................................passed
-Then User sees invalid Ssn message "invalid_ssn_message"....................passed
+Then User sees invalid phone number message "invalid_phone_number_message"..passed
 ]]></system-out>
 </testcase>
-<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_010 SSN number cannot be of any chars nor spec chars except &quot;-&quot; 6" time="12.297">
+<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_011 Mobilephone number cannot be of any chars nor spec chars except &quot;-&quot; 6" time="14.62">
 <system-out><![CDATA[Given User goes to "GmiBank_url" Homepage...................................passed
 And User clicks the "Register" from dropdown menu...........................passed
-And User enter "invalid_ssn6" to SSN textbox................................passed
+And User enter "invalid_phone_number6" to Phone number text box.............passed
 And User preses Tab key.....................................................passed
-Then User sees invalid Ssn message "invalid_ssn_message"....................passed
+Then User sees invalid phone number message "invalid_phone_number_message"..passed
 ]]></system-out>
 </testcase>
-<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_010 SSN number cannot be of any chars nor spec chars except &quot;-&quot; 7" time="13.646">
+<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_011 Mobilephone number cannot be of any chars nor spec chars except &quot;-&quot; 7" time="11.555">
 <system-out><![CDATA[Given User goes to "GmiBank_url" Homepage...................................passed
 And User clicks the "Register" from dropdown menu...........................passed
-And User enter "invalid_ssn7" to SSN textbox................................passed
+And User enter "invalid_phone_number7" to Phone number text box.............passed
 And User preses Tab key.....................................................passed
-Then User sees invalid Ssn message "invalid_ssn_message"....................passed
+Then User sees invalid phone number message "invalid_phone_number_message"..passed
 ]]></system-out>
 </testcase>
-<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_010 SSN number cannot be of any chars nor spec chars except &quot;-&quot; 8" time="14.902">
+<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_011 Mobilephone number cannot be of any chars nor spec chars except &quot;-&quot; 8" time="20.359">
 <system-out><![CDATA[Given User goes to "GmiBank_url" Homepage...................................passed
 And User clicks the "Register" from dropdown menu...........................passed
-And User enter "invalid_ssn8" to SSN textbox................................passed
+And User enter "invalid_phone_number8" to Phone number text box.............passed
 And User preses Tab key.....................................................passed
-Then User sees invalid Ssn message "invalid_ssn_message"....................passed
+Then User sees invalid phone number message "invalid_phone_number_message"..passed
 ]]></system-out>
 </testcase>
-<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_010 SSN number cannot be of any chars nor spec chars except &quot;-&quot; 9" time="12.896">
+<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_011 Mobilephone number cannot be of any chars nor spec chars except &quot;-&quot; 9" time="13.311">
 <system-out><![CDATA[Given User goes to "GmiBank_url" Homepage...................................passed
 And User clicks the "Register" from dropdown menu...........................passed
-And User enter "invalid_ssn9" to SSN textbox................................passed
+And User enter "invalid_phone_number9" to Phone number text box.............passed
 And User preses Tab key.....................................................passed
-Then User sees invalid Ssn message "invalid_ssn_message"....................passed
+Then User sees invalid phone number message "invalid_phone_number_message"..passed
+]]></system-out>
+</testcase>
+<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_011 Mobilephone number cannot be of any chars nor spec chars except &quot;-&quot; 10" time="12.182">
+<system-out><![CDATA[Given User goes to "GmiBank_url" Homepage...................................passed
+And User clicks the "Register" from dropdown menu...........................passed
+And User enter "invalid_phone_number10" to Phone number text box............passed
+And User preses Tab key.....................................................passed
+Then User sees invalid phone number message "invalid_phone_number_message"..passed
 ]]></system-out>
 </testcase>
 </testsuite>

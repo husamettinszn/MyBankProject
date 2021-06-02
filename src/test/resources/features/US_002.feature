@@ -42,10 +42,9 @@ Feature: US_002 System should not allow anyone to register with invalid credenti
   Scenario: TC_009 Any field on the registration page should not be left blank
     And User enter anything to New password confirmation text box and presses the enter key
     Then User should see the New password confirmation error message "enter_new_password_confirmation_message" message
-  @register
+
   Scenario Outline: TC_010 SSN number cannot be of any chars nor spec chars except "-"
     And User enter "<invalid_ssn>" to SSN textbox.
-
     And User preses Tab key.
     Then User sees invalid Ssn message "invalid_ssn_message"
     Examples:
@@ -59,6 +58,26 @@ Feature: US_002 System should not allow anyone to register with invalid credenti
       |invalid_ssn7 |
       |invalid_ssn8 |
       |invalid_ssn9 |
+
+  @register
+    Scenario Outline: TC_011 Mobilephone number cannot be of any chars nor spec chars except "-"
+      And User enter "<invalid_phone_nummer>" to Phone number text box.
+      And User preses Tab key.
+      Then User sees invalid phone number message "invalid_phone_number_message"
+      Examples:
+        | invalid_phone_nummer |
+        |invalid_phone_number1 |
+        |invalid_phone_number2 |
+        |invalid_phone_number3 |
+        |invalid_phone_number4 |
+        |invalid_phone_number5 |
+        |invalid_phone_number6 |
+        |invalid_phone_number7 |
+        |invalid_phone_number8 |
+        |invalid_phone_number9 |
+        |invalid_phone_number10 |
+
+
 
 
 

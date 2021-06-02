@@ -3,6 +3,7 @@ package stepdefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.checkerframework.checker.units.qual.C;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
@@ -145,5 +146,16 @@ public class US_002StepDefinitions {
         System.out.println(registerPage.errorMessage.getText());
         Assert.assertEquals(ConfigReader.getProperty(invalid_ssn_message), registerPage.errorMessage.getText());
 
+    }
+
+    @And("User enter {string} to Phone number text box.")
+    public void userEnterToPhonNumberTextBox(String invalid_phone_nummer) {
+        registerPage.mobilephoneTextBox.sendKeys(ConfigReader.getProperty(invalid_phone_nummer));
+
+    }
+
+    @Then("User sees invalid phone number message {string}")
+    public void userSeesInvalidPhoneNumberMessage(String invalid_phone_number_message) {
+       Assert.assertEquals(ConfigReader.getProperty(invalid_phone_number_message), registerPage.errorMessage.getText());
     }
 }

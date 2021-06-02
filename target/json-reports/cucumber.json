@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11471000000,
+              "duration": 15354000000,
               "status": "passed"
             },
             "line": 5,
@@ -29,7 +29,7 @@
           },
           {
             "result": {
-              "duration": 282000000,
+              "duration": 228000000,
               "status": "passed"
             },
             "line": 6,
@@ -48,7 +48,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-05-26T21:23:24.673Z",
+        "start_timestamp": "2021-06-02T09:13:29.029Z",
         "before": [
           {
             "result": {
@@ -59,14 +59,14 @@
             }
           }
         ],
-        "line": 53,
-        "name": "TC_010 SSN number cannot be of any chars nor spec chars except \"-\"",
+        "line": 69,
+        "name": "TC_011 Mobilephone number cannot be of any chars nor spec chars except \"-\"",
         "description": "",
-        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-010-ssn-number-cannot-be-of-any-chars-nor-spec-chars-except-\"-\";;2",
+        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-011-mobilephone-number-cannot-be-of-any-chars-nor-spec-chars-except-\"-\";;2",
         "after": [
           {
             "result": {
-              "duration": 2298000000,
+              "duration": 2296000000,
               "status": "passed"
             },
             "match": {
@@ -79,28 +79,28 @@
         "steps": [
           {
             "result": {
-              "duration": 154000000,
+              "duration": 149000000,
               "status": "passed"
             },
-            "line": 47,
-            "name": "User enter \"invalid_ssn1\" to SSN textbox.",
+            "line": 64,
+            "name": "User enter \"invalid_phone_number1\" to Phone number text box.",
             "match": {
               "arguments": [
                 {
-                  "val": "\"invalid_ssn1\"",
+                  "val": "\"invalid_phone_number1\"",
                   "offset": 11
                 }
               ],
-              "location": "stepdefinitions.US_002StepDefinitions.userEnterToSSNTextbox(java.lang.String)"
+              "location": "stepdefinitions.US_002StepDefinitions.userEnterToPhonNumberTextBox(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 47000000,
+              "duration": 30000000,
               "status": "passed"
             },
-            "line": 49,
+            "line": 65,
             "name": "User preses Tab key.",
             "match": {
               "location": "stepdefinitions.US_002StepDefinitions.userPresesTabKey()"
@@ -109,19 +109,19 @@
           },
           {
             "result": {
-              "duration": 87000000,
+              "duration": 88000000,
               "status": "passed"
             },
-            "line": 50,
-            "name": "User sees invalid Ssn message \"invalid_ssn_message\"",
+            "line": 66,
+            "name": "User sees invalid phone number message \"invalid_phone_number_message\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"invalid_ssn_message\"",
-                  "offset": 30
+                  "val": "\"invalid_phone_number_message\"",
+                  "offset": 39
                 }
               ],
-              "location": "stepdefinitions.US_002StepDefinitions.userSeesInvalidSsnMessage(java.lang.String)"
+              "location": "stepdefinitions.US_002StepDefinitions.userSeesInvalidPhoneNumberMessage(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -141,7 +141,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9311000000,
+              "duration": 14087000000,
               "status": "passed"
             },
             "line": 5,
@@ -159,7 +159,7 @@
           },
           {
             "result": {
-              "duration": 319000000,
+              "duration": 218000000,
               "status": "passed"
             },
             "line": 6,
@@ -178,7 +178,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-05-26T21:23:39.111Z",
+        "start_timestamp": "2021-06-02T09:13:47.284Z",
         "before": [
           {
             "result": {
@@ -189,14 +189,14 @@
             }
           }
         ],
-        "line": 54,
-        "name": "TC_010 SSN number cannot be of any chars nor spec chars except \"-\"",
+        "line": 70,
+        "name": "TC_011 Mobilephone number cannot be of any chars nor spec chars except \"-\"",
         "description": "",
-        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-010-ssn-number-cannot-be-of-any-chars-nor-spec-chars-except-\"-\";;3",
+        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-011-mobilephone-number-cannot-be-of-any-chars-nor-spec-chars-except-\"-\";;3",
         "after": [
           {
             "result": {
-              "duration": 2247000000,
+              "duration": 2329000000,
               "status": "passed"
             },
             "match": {
@@ -209,28 +209,28 @@
         "steps": [
           {
             "result": {
-              "duration": 181000000,
+              "duration": 167000000,
               "status": "passed"
             },
-            "line": 47,
-            "name": "User enter \"invalid_ssn2\" to SSN textbox.",
+            "line": 64,
+            "name": "User enter \"invalid_phone_number2\" to Phone number text box.",
             "match": {
               "arguments": [
                 {
-                  "val": "\"invalid_ssn2\"",
+                  "val": "\"invalid_phone_number2\"",
                   "offset": 11
                 }
               ],
-              "location": "stepdefinitions.US_002StepDefinitions.userEnterToSSNTextbox(java.lang.String)"
+              "location": "stepdefinitions.US_002StepDefinitions.userEnterToPhonNumberTextBox(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 82000000,
+              "duration": 78000000,
               "status": "passed"
             },
-            "line": 49,
+            "line": 65,
             "name": "User preses Tab key.",
             "match": {
               "location": "stepdefinitions.US_002StepDefinitions.userPresesTabKey()"
@@ -239,19 +239,19 @@
           },
           {
             "result": {
-              "duration": 52000000,
+              "duration": 51000000,
               "status": "passed"
             },
-            "line": 50,
-            "name": "User sees invalid Ssn message \"invalid_ssn_message\"",
+            "line": 66,
+            "name": "User sees invalid phone number message \"invalid_phone_number_message\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"invalid_ssn_message\"",
-                  "offset": 30
+                  "val": "\"invalid_phone_number_message\"",
+                  "offset": 39
                 }
               ],
-              "location": "stepdefinitions.US_002StepDefinitions.userSeesInvalidSsnMessage(java.lang.String)"
+              "location": "stepdefinitions.US_002StepDefinitions.userSeesInvalidPhoneNumberMessage(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -271,7 +271,7 @@
         "steps": [
           {
             "result": {
-              "duration": 13037000000,
+              "duration": 14498000000,
               "status": "passed"
             },
             "line": 5,
@@ -289,7 +289,7 @@
           },
           {
             "result": {
-              "duration": 307000000,
+              "duration": 317000000,
               "status": "passed"
             },
             "line": 6,
@@ -308,7 +308,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-05-26T21:23:51.341Z",
+        "start_timestamp": "2021-06-02T09:14:04.236Z",
         "before": [
           {
             "result": {
@@ -319,14 +319,14 @@
             }
           }
         ],
-        "line": 55,
-        "name": "TC_010 SSN number cannot be of any chars nor spec chars except \"-\"",
+        "line": 71,
+        "name": "TC_011 Mobilephone number cannot be of any chars nor spec chars except \"-\"",
         "description": "",
-        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-010-ssn-number-cannot-be-of-any-chars-nor-spec-chars-except-\"-\";;4",
+        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-011-mobilephone-number-cannot-be-of-any-chars-nor-spec-chars-except-\"-\";;4",
         "after": [
           {
             "result": {
-              "duration": 2341000000,
+              "duration": 2232000000,
               "status": "passed"
             },
             "match": {
@@ -339,19 +339,19 @@
         "steps": [
           {
             "result": {
-              "duration": 131000000,
+              "duration": 196000000,
               "status": "passed"
             },
-            "line": 47,
-            "name": "User enter \"invalid_ssn3\" to SSN textbox.",
+            "line": 64,
+            "name": "User enter \"invalid_phone_number3\" to Phone number text box.",
             "match": {
               "arguments": [
                 {
-                  "val": "\"invalid_ssn3\"",
+                  "val": "\"invalid_phone_number3\"",
                   "offset": 11
                 }
               ],
-              "location": "stepdefinitions.US_002StepDefinitions.userEnterToSSNTextbox(java.lang.String)"
+              "location": "stepdefinitions.US_002StepDefinitions.userEnterToPhonNumberTextBox(java.lang.String)"
             },
             "keyword": "And "
           },
@@ -360,7 +360,7 @@
               "duration": 29000000,
               "status": "passed"
             },
-            "line": 49,
+            "line": 65,
             "name": "User preses Tab key.",
             "match": {
               "location": "stepdefinitions.US_002StepDefinitions.userPresesTabKey()"
@@ -369,19 +369,19 @@
           },
           {
             "result": {
-              "duration": 106000000,
+              "duration": 38000000,
               "status": "passed"
             },
-            "line": 50,
-            "name": "User sees invalid Ssn message \"invalid_ssn_message\"",
+            "line": 66,
+            "name": "User sees invalid phone number message \"invalid_phone_number_message\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"invalid_ssn_message\"",
-                  "offset": 30
+                  "val": "\"invalid_phone_number_message\"",
+                  "offset": 39
                 }
               ],
-              "location": "stepdefinitions.US_002StepDefinitions.userSeesInvalidSsnMessage(java.lang.String)"
+              "location": "stepdefinitions.US_002StepDefinitions.userSeesInvalidPhoneNumberMessage(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -401,7 +401,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10275000000,
+              "duration": 15537000000,
               "status": "passed"
             },
             "line": 5,
@@ -419,7 +419,7 @@
           },
           {
             "result": {
-              "duration": 274000000,
+              "duration": 258000000,
               "status": "passed"
             },
             "line": 6,
@@ -438,7 +438,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-05-26T21:24:07.312Z",
+        "start_timestamp": "2021-06-02T09:14:21.567Z",
         "before": [
           {
             "result": {
@@ -449,140 +449,10 @@
             }
           }
         ],
-        "line": 56,
-        "name": "TC_010 SSN number cannot be of any chars nor spec chars except \"-\"",
+        "line": 72,
+        "name": "TC_011 Mobilephone number cannot be of any chars nor spec chars except \"-\"",
         "description": "",
-        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-010-ssn-number-cannot-be-of-any-chars-nor-spec-chars-except-\"-\";;5",
-        "after": [
-          {
-            "result": {
-              "duration": 2292000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 133000000,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "User enter \"invalid_ssn4\" to SSN textbox.",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"invalid_ssn4\"",
-                  "offset": 11
-                }
-              ],
-              "location": "stepdefinitions.US_002StepDefinitions.userEnterToSSNTextbox(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 32000000,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "User preses Tab key.",
-            "match": {
-              "location": "stepdefinitions.US_002StepDefinitions.userPresesTabKey()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 91000000,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "User sees invalid Ssn message \"invalid_ssn_message\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"invalid_ssn_message\"",
-                  "offset": 30
-                }
-              ],
-              "location": "stepdefinitions.US_002StepDefinitions.userSeesInvalidSsnMessage(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@register"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 14065000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User goes to \"GmiBank_url\" Homepage",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"GmiBank_url\"",
-                  "offset": 13
-                }
-              ],
-              "location": "stepdefinitions.US_002StepDefinitions.userGoesToHomepage(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 244000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User clicks the \"Register\" from dropdown menu",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Register\"",
-                  "offset": 16
-                }
-              ],
-              "location": "stepdefinitions.US_002StepDefinitions.userClicksTheFromDropdownMenu(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-05-26T21:24:20.423Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.setup()"
-            }
-          }
-        ],
-        "line": 57,
-        "name": "TC_010 SSN number cannot be of any chars nor spec chars except \"-\"",
-        "description": "",
-        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-010-ssn-number-cannot-be-of-any-chars-nor-spec-chars-except-\"-\";;6",
+        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-011-mobilephone-number-cannot-be-of-any-chars-nor-spec-chars-except-\"-\";;5",
         "after": [
           {
             "result": {
@@ -599,28 +469,28 @@
         "steps": [
           {
             "result": {
-              "duration": 125000000,
+              "duration": 114000000,
               "status": "passed"
             },
-            "line": 47,
-            "name": "User enter \"invalid_ssn5\" to SSN textbox.",
+            "line": 64,
+            "name": "User enter \"invalid_phone_number4\" to Phone number text box.",
             "match": {
               "arguments": [
                 {
-                  "val": "\"invalid_ssn5\"",
+                  "val": "\"invalid_phone_number4\"",
                   "offset": 11
                 }
               ],
-              "location": "stepdefinitions.US_002StepDefinitions.userEnterToSSNTextbox(java.lang.String)"
+              "location": "stepdefinitions.US_002StepDefinitions.userEnterToPhonNumberTextBox(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 45000000,
+              "duration": 17000000,
               "status": "passed"
             },
-            "line": 49,
+            "line": 65,
             "name": "User preses Tab key.",
             "match": {
               "location": "stepdefinitions.US_002StepDefinitions.userPresesTabKey()"
@@ -629,19 +499,19 @@
           },
           {
             "result": {
-              "duration": 91000000,
+              "duration": 25000000,
               "status": "passed"
             },
-            "line": 50,
-            "name": "User sees invalid Ssn message \"invalid_ssn_message\"",
+            "line": 66,
+            "name": "User sees invalid phone number message \"invalid_phone_number_message\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"invalid_ssn_message\"",
-                  "offset": 30
+                  "val": "\"invalid_phone_number_message\"",
+                  "offset": 39
                 }
               ],
-              "location": "stepdefinitions.US_002StepDefinitions.userSeesInvalidSsnMessage(java.lang.String)"
+              "location": "stepdefinitions.US_002StepDefinitions.userSeesInvalidPhoneNumberMessage(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -661,7 +531,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9461000000,
+              "duration": 14304000000,
               "status": "passed"
             },
             "line": 5,
@@ -679,7 +549,7 @@
           },
           {
             "result": {
-              "duration": 277000000,
+              "duration": 227000000,
               "status": "passed"
             },
             "line": 6,
@@ -698,7 +568,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-05-26T21:24:37.334Z",
+        "start_timestamp": "2021-06-02T09:14:39.873Z",
         "before": [
           {
             "result": {
@@ -709,14 +579,14 @@
             }
           }
         ],
-        "line": 58,
-        "name": "TC_010 SSN number cannot be of any chars nor spec chars except \"-\"",
+        "line": 73,
+        "name": "TC_011 Mobilephone number cannot be of any chars nor spec chars except \"-\"",
         "description": "",
-        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-010-ssn-number-cannot-be-of-any-chars-nor-spec-chars-except-\"-\";;7",
+        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-011-mobilephone-number-cannot-be-of-any-chars-nor-spec-chars-except-\"-\";;6",
         "after": [
           {
             "result": {
-              "duration": 2279000000,
+              "duration": 2273000000,
               "status": "passed"
             },
             "match": {
@@ -729,28 +599,28 @@
         "steps": [
           {
             "result": {
-              "duration": 156000000,
+              "duration": 141000000,
               "status": "passed"
             },
-            "line": 47,
-            "name": "User enter \"invalid_ssn6\" to SSN textbox.",
+            "line": 64,
+            "name": "User enter \"invalid_phone_number5\" to Phone number text box.",
             "match": {
               "arguments": [
                 {
-                  "val": "\"invalid_ssn6\"",
+                  "val": "\"invalid_phone_number5\"",
                   "offset": 11
                 }
               ],
-              "location": "stepdefinitions.US_002StepDefinitions.userEnterToSSNTextbox(java.lang.String)"
+              "location": "stepdefinitions.US_002StepDefinitions.userEnterToPhonNumberTextBox(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 59000000,
+              "duration": 29000000,
               "status": "passed"
             },
-            "line": 49,
+            "line": 65,
             "name": "User preses Tab key.",
             "match": {
               "location": "stepdefinitions.US_002StepDefinitions.userPresesTabKey()"
@@ -759,19 +629,19 @@
           },
           {
             "result": {
-              "duration": 63000000,
+              "duration": 95000000,
               "status": "passed"
             },
-            "line": 50,
-            "name": "User sees invalid Ssn message \"invalid_ssn_message\"",
+            "line": 66,
+            "name": "User sees invalid phone number message \"invalid_phone_number_message\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"invalid_ssn_message\"",
-                  "offset": 30
+                  "val": "\"invalid_phone_number_message\"",
+                  "offset": 39
                 }
               ],
-              "location": "stepdefinitions.US_002StepDefinitions.userSeesInvalidSsnMessage(java.lang.String)"
+              "location": "stepdefinitions.US_002StepDefinitions.userSeesInvalidPhoneNumberMessage(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -791,7 +661,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10766000000,
+              "duration": 11801000000,
               "status": "passed"
             },
             "line": 5,
@@ -809,7 +679,7 @@
           },
           {
             "result": {
-              "duration": 300000000,
+              "duration": 271000000,
               "status": "passed"
             },
             "line": 6,
@@ -828,7 +698,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-05-26T21:24:49.642Z",
+        "start_timestamp": "2021-06-02T09:14:56.956Z",
         "before": [
           {
             "result": {
@@ -839,14 +709,14 @@
             }
           }
         ],
-        "line": 59,
-        "name": "TC_010 SSN number cannot be of any chars nor spec chars except \"-\"",
+        "line": 74,
+        "name": "TC_011 Mobilephone number cannot be of any chars nor spec chars except \"-\"",
         "description": "",
-        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-010-ssn-number-cannot-be-of-any-chars-nor-spec-chars-except-\"-\";;8",
+        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-011-mobilephone-number-cannot-be-of-any-chars-nor-spec-chars-except-\"-\";;7",
         "after": [
           {
             "result": {
-              "duration": 2303000000,
+              "duration": 2285000000,
               "status": "passed"
             },
             "match": {
@@ -859,19 +729,149 @@
         "steps": [
           {
             "result": {
-              "duration": 166000000,
+              "duration": 157000000,
               "status": "passed"
             },
-            "line": 47,
-            "name": "User enter \"invalid_ssn7\" to SSN textbox.",
+            "line": 64,
+            "name": "User enter \"invalid_phone_number6\" to Phone number text box.",
             "match": {
               "arguments": [
                 {
-                  "val": "\"invalid_ssn7\"",
+                  "val": "\"invalid_phone_number6\"",
                   "offset": 11
                 }
               ],
-              "location": "stepdefinitions.US_002StepDefinitions.userEnterToSSNTextbox(java.lang.String)"
+              "location": "stepdefinitions.US_002StepDefinitions.userEnterToPhonNumberTextBox(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26000000,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "User preses Tab key.",
+            "match": {
+              "location": "stepdefinitions.US_002StepDefinitions.userPresesTabKey()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 78000000,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "User sees invalid phone number message \"invalid_phone_number_message\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid_phone_number_message\"",
+                  "offset": 39
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userSeesInvalidPhoneNumberMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8778000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User goes to \"GmiBank_url\" Homepage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GmiBank_url\"",
+                  "offset": 13
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userGoesToHomepage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 250000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the \"Register\" from dropdown menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Register\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userClicksTheFromDropdownMenu(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-02T09:15:11.586Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 75,
+        "name": "TC_011 Mobilephone number cannot be of any chars nor spec chars except \"-\"",
+        "description": "",
+        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-011-mobilephone-number-cannot-be-of-any-chars-nor-spec-chars-except-\"-\";;8",
+        "after": [
+          {
+            "result": {
+              "duration": 2294000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 132000000,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "User enter \"invalid_phone_number7\" to Phone number text box.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid_phone_number7\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userEnterToPhonNumberTextBox(java.lang.String)"
             },
             "keyword": "And "
           },
@@ -880,7 +880,7 @@
               "duration": 32000000,
               "status": "passed"
             },
-            "line": 49,
+            "line": 65,
             "name": "User preses Tab key.",
             "match": {
               "location": "stepdefinitions.US_002StepDefinitions.userPresesTabKey()"
@@ -889,19 +889,19 @@
           },
           {
             "result": {
-              "duration": 76000000,
+              "duration": 68000000,
               "status": "passed"
             },
-            "line": 50,
-            "name": "User sees invalid Ssn message \"invalid_ssn_message\"",
+            "line": 66,
+            "name": "User sees invalid phone number message \"invalid_phone_number_message\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"invalid_ssn_message\"",
-                  "offset": 30
+                  "val": "\"invalid_phone_number_message\"",
+                  "offset": 39
                 }
               ],
-              "location": "stepdefinitions.US_002StepDefinitions.userSeesInvalidSsnMessage(java.lang.String)"
+              "location": "stepdefinitions.US_002StepDefinitions.userSeesInvalidPhoneNumberMessage(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -921,7 +921,7 @@
         "steps": [
           {
             "result": {
-              "duration": 12103000000,
+              "duration": 17572000000,
               "status": "passed"
             },
             "line": 5,
@@ -939,7 +939,7 @@
           },
           {
             "result": {
-              "duration": 292000000,
+              "duration": 218000000,
               "status": "passed"
             },
             "line": 6,
@@ -958,7 +958,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-05-26T21:25:03.300Z",
+        "start_timestamp": "2021-06-02T09:15:23.152Z",
         "before": [
           {
             "result": {
@@ -969,14 +969,14 @@
             }
           }
         ],
-        "line": 60,
-        "name": "TC_010 SSN number cannot be of any chars nor spec chars except \"-\"",
+        "line": 76,
+        "name": "TC_011 Mobilephone number cannot be of any chars nor spec chars except \"-\"",
         "description": "",
-        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-010-ssn-number-cannot-be-of-any-chars-nor-spec-chars-except-\"-\";;9",
+        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-011-mobilephone-number-cannot-be-of-any-chars-nor-spec-chars-except-\"-\";;9",
         "after": [
           {
             "result": {
-              "duration": 2247000000,
+              "duration": 2316000000,
               "status": "passed"
             },
             "match": {
@@ -989,28 +989,28 @@
         "steps": [
           {
             "result": {
-              "duration": 163000000,
+              "duration": 141000000,
               "status": "passed"
             },
-            "line": 47,
-            "name": "User enter \"invalid_ssn8\" to SSN textbox.",
+            "line": 64,
+            "name": "User enter \"invalid_phone_number8\" to Phone number text box.",
             "match": {
               "arguments": [
                 {
-                  "val": "\"invalid_ssn8\"",
+                  "val": "\"invalid_phone_number8\"",
                   "offset": 11
                 }
               ],
-              "location": "stepdefinitions.US_002StepDefinitions.userEnterToSSNTextbox(java.lang.String)"
+              "location": "stepdefinitions.US_002StepDefinitions.userEnterToPhonNumberTextBox(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 33000000,
+              "duration": 23000000,
               "status": "passed"
             },
-            "line": 49,
+            "line": 65,
             "name": "User preses Tab key.",
             "match": {
               "location": "stepdefinitions.US_002StepDefinitions.userPresesTabKey()"
@@ -1019,19 +1019,19 @@
           },
           {
             "result": {
-              "duration": 58000000,
+              "duration": 82000000,
               "status": "passed"
             },
-            "line": 50,
-            "name": "User sees invalid Ssn message \"invalid_ssn_message\"",
+            "line": 66,
+            "name": "User sees invalid phone number message \"invalid_phone_number_message\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"invalid_ssn_message\"",
-                  "offset": 30
+                  "val": "\"invalid_phone_number_message\"",
+                  "offset": 39
                 }
               ],
-              "location": "stepdefinitions.US_002StepDefinitions.userSeesInvalidSsnMessage(java.lang.String)"
+              "location": "stepdefinitions.US_002StepDefinitions.userSeesInvalidPhoneNumberMessage(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -1051,7 +1051,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9853000000,
+              "duration": 10507000000,
               "status": "passed"
             },
             "line": 5,
@@ -1069,7 +1069,7 @@
           },
           {
             "result": {
-              "duration": 296000000,
+              "duration": 260000000,
               "status": "passed"
             },
             "line": 6,
@@ -1088,7 +1088,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-05-26T21:25:18.209Z",
+        "start_timestamp": "2021-06-02T09:15:43.522Z",
         "before": [
           {
             "result": {
@@ -1099,14 +1099,14 @@
             }
           }
         ],
-        "line": 61,
-        "name": "TC_010 SSN number cannot be of any chars nor spec chars except \"-\"",
+        "line": 77,
+        "name": "TC_011 Mobilephone number cannot be of any chars nor spec chars except \"-\"",
         "description": "",
-        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-010-ssn-number-cannot-be-of-any-chars-nor-spec-chars-except-\"-\";;10",
+        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-011-mobilephone-number-cannot-be-of-any-chars-nor-spec-chars-except-\"-\";;10",
         "after": [
           {
             "result": {
-              "duration": 2389000000,
+              "duration": 2291000000,
               "status": "passed"
             },
             "match": {
@@ -1119,28 +1119,28 @@
         "steps": [
           {
             "result": {
-              "duration": 217000000,
+              "duration": 152000000,
               "status": "passed"
             },
-            "line": 47,
-            "name": "User enter \"invalid_ssn9\" to SSN textbox.",
+            "line": 64,
+            "name": "User enter \"invalid_phone_number9\" to Phone number text box.",
             "match": {
               "arguments": [
                 {
-                  "val": "\"invalid_ssn9\"",
+                  "val": "\"invalid_phone_number9\"",
                   "offset": 11
                 }
               ],
-              "location": "stepdefinitions.US_002StepDefinitions.userEnterToSSNTextbox(java.lang.String)"
+              "location": "stepdefinitions.US_002StepDefinitions.userEnterToPhonNumberTextBox(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 30000000,
+              "duration": 21000000,
               "status": "passed"
             },
-            "line": 49,
+            "line": 65,
             "name": "User preses Tab key.",
             "match": {
               "location": "stepdefinitions.US_002StepDefinitions.userPresesTabKey()"
@@ -1149,19 +1149,149 @@
           },
           {
             "result": {
-              "duration": 107000000,
+              "duration": 77000000,
               "status": "passed"
             },
-            "line": 50,
-            "name": "User sees invalid Ssn message \"invalid_ssn_message\"",
+            "line": 66,
+            "name": "User sees invalid phone number message \"invalid_phone_number_message\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"invalid_ssn_message\"",
-                  "offset": 30
+                  "val": "\"invalid_phone_number_message\"",
+                  "offset": 39
                 }
               ],
-              "location": "stepdefinitions.US_002StepDefinitions.userSeesInvalidSsnMessage(java.lang.String)"
+              "location": "stepdefinitions.US_002StepDefinitions.userSeesInvalidPhoneNumberMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9444000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User goes to \"GmiBank_url\" Homepage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GmiBank_url\"",
+                  "offset": 13
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userGoesToHomepage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 240000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the \"Register\" from dropdown menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Register\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userClicksTheFromDropdownMenu(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-02T09:15:56.842Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 78,
+        "name": "TC_011 Mobilephone number cannot be of any chars nor spec chars except \"-\"",
+        "description": "",
+        "id": "us-002-system-should-not-allow-anyone-to-register-with-invalid-credentials;tc-011-mobilephone-number-cannot-be-of-any-chars-nor-spec-chars-except-\"-\";;11",
+        "after": [
+          {
+            "result": {
+              "duration": 2257000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 142000000,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "User enter \"invalid_phone_number10\" to Phone number text box.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid_phone_number10\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userEnterToPhonNumberTextBox(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23000000,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "User preses Tab key.",
+            "match": {
+              "location": "stepdefinitions.US_002StepDefinitions.userPresesTabKey()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 74000000,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "User sees invalid phone number message \"invalid_phone_number_message\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid_phone_number_message\"",
+                  "offset": 39
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userSeesInvalidPhoneNumberMessage(java.lang.String)"
             },
             "keyword": "Then "
           }
