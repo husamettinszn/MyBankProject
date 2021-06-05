@@ -1,19 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="30.157">
-<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_012 email id cannot be created without &quot;@&quot; sign and &quot;.&quot; extensions" time="15.508">
-<system-out><![CDATA[Given User goes to "GmiBank_url" Homepage...................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="29.289">
+<testcase classname="US_003 Registration page should restrict password usage to a secure" name="TC_001 There should be at least one lowercase char for stronger password and" time="29.04">
+<failure message="invalid selector: Unable to locate an element with the xpath expression (//li[@class='point'])[1]] because of the following error:&#10;SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//li[@class='point'])[1]]' is not a valid XPath expression.&#10;  (Session info: chrome=91.0.4472.77)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'KAISER', ip: '192.168.114.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\HUSAME~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52775}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e41b8fd3a53bfb9e0a8681c6a3687eb8&#10;*** Element info: {Using=xpath, value=(//li[@class='point'])[1]]}" type="org.openqa.selenium.InvalidSelectorException"><![CDATA[When User goes to "GmiBank_url" Homepage....................................passed
 And User clicks the "Register" from dropdown menu...........................passed
-And User enter "invalid_email1" to email text box...........................passed
-And User preses Tab key.....................................................passed
-Then User sees invalid email message "invalid_email_message"................passed
-]]></system-out>
-</testcase>
-<testcase classname="US_002 System should not allow anyone to register with invalid credentials" name="TC_012 email id cannot be created without &quot;@&quot; sign and &quot;.&quot; extensions 2" time="14.38">
-<system-out><![CDATA[Given User goes to "GmiBank_url" Homepage...................................passed
-And User clicks the "Register" from dropdown menu...........................passed
-And User enter "invalid_email2" to email text box...........................passed
-And User preses Tab key.....................................................passed
-Then User sees invalid email message "invalid_email_message"................passed
-]]></system-out>
+And User scrolls down the page..............................................passed
+And User enter to password text box five lowercase "invalid_password1" and presses tab.passed
+Then User sees invalid password message "password_should_contain_at_least" und.passed
+Then User sees on the password strenght bar red colour......................failed
+
+StackTrace:
+org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression (//li[@class='point'])[1]] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//li[@class='point'])[1]]' is not a valid XPath expression.
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'KAISER', ip: '192.168.114.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\HUSAME~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52775}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e41b8fd3a53bfb9e0a8681c6a3687eb8
+*** Element info: {Using=xpath, value=(//li[@class='point'])[1]]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)
+	at stepdefinitions.US_003StepDefinitions.user_sees_on_the_password_strenght_bar_red_colour(US_003StepDefinitions.java:32)
+	at ✽.User sees on the password strenght bar red colour(file:///C:/Users/Husamettin/IdeaProjects/MyBankProject/src/test/resources/features/US003Registration%20page%20should%20restrict%20password%20usage%20to%20a%20secure%20%20%20and%20high%20level%20passcode.feature:13)
+]]></failure>
 </testcase>
 </testsuite>

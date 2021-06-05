@@ -76,7 +76,7 @@ Feature: US_002 System should not allow anyone to register with invalid credenti
         |invalid_phone_number8 |
         |invalid_phone_number9 |
         |invalid_phone_number10 |
-  @register
+
     Scenario Outline: TC_012 email id cannot be created without "@" sign and "." extensions
       And User enter "<invalid_email>" to email text box
       And User preses Tab key.
