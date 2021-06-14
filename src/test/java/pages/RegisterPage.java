@@ -48,7 +48,7 @@ public class RegisterPage {
     @FindBy(xpath = "(//div[@class='invalid-feedback'])[1]")
     public WebElement errorMessage;
 
-    @FindBy(xpath = "(//li[@class='point'])[1]]")
+    @FindBy(xpath = "(//li[@class='point'])[1]")
     public WebElement redBar;
 
 
