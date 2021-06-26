@@ -1,0 +1,156 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11484000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User goes to \"GmiBank_url\" Homepage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GmiBank_url\"",
+                  "offset": 13
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userGoesToHomepage(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 267000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the \"Register\" from dropdown menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Register\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userClicksTheFromDropdownMenu(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-14T09:33:04.576Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "TC_001 There should be at least one lowercase char for stronger password and",
+        "description": "  see the level chart change accordingly",
+        "id": "us-003-registration-page-should-restrict-password-usage-to-a-secure;tc-001-there-should-be-at-least-one-lowercase-char-for-stronger-password-and",
+        "after": [
+          {
+            "result": {
+              "duration": 2298000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 90000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User scrolls down the page",
+            "match": {
+              "location": "stepdefinitions.US_003StepDefinitions.user_scrolls_down_the_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 246000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enter to password text box five lowercase \"invalid_password1\" and presses tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid_password1\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefinitions.US_003StepDefinitions.userEnterToPasswordTextBoxFiveLowercaseAndPressesTab(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User sees invalid password message \"password_should_contain_at_least\" und",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password_should_contain_at_least\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepdefinitions.US_003StepDefinitions.user_sees_invalid_password_message_und(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 121000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User sees on the password strenght bar red colour",
+            "match": {
+              "location": "stepdefinitions.US_003StepDefinitions.user_sees_on_the_password_strenght_bar_red_colour()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register"
+          }
+        ]
+      }
+    ],
+    "name": "US_003 Registration page should restrict password usage to a secure",
+    "description": "  and high level passcode",
+    "id": "us-003-registration-page-should-restrict-password-usage-to-a-secure",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US003Registration%20page%20should%20restrict%20password%20usage%20to%20a%20secure%20%20%20and%20high%20level%20passcode.feature",
+    "tags": []
+  }
+]

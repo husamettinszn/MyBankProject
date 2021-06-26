@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.881">
+<testcase classname="US_003 Registration page should restrict password usage to a secure" name="TC_001 There should be at least one lowercase char for stronger password and" time="14.623">
+<system-out><![CDATA[When User goes to "GmiBank_url" Homepage....................................passed
+And User clicks the "Register" from dropdown menu...........................passed
+And User scrolls down the page..............................................passed
+And User enter to password text box five lowercase "invalid_password1" and presses tab.passed
+Then User sees invalid password message "password_should_contain_at_least" und.passed
+Then User sees on the password strenght bar red colour......................passed
+]]></system-out>
+</testcase>
+</testsuite>
