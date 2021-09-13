@@ -39,4 +39,5 @@ public class Tekrar {
             System.out.println("Sonuc = " + sonuc);
         }while (true);
     }
+
 }
