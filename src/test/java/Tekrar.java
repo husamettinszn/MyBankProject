@@ -37,6 +37,8 @@ public class Tekrar {
                 sonuc = ilkSayi / ikinciSayi;
             }
             System.out.println("Sonuc = " + sonuc);
-        }while (true);
+        }
+        while (true);
+
         }
 }
