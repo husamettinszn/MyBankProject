@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.881">
-<testcase classname="US_003 Registration page should restrict password usage to a secure" name="TC_001 There should be at least one lowercase char for stronger password and" time="14.623">
-<system-out><![CDATA[When User goes to "GmiBank_url" Homepage....................................passed
-And User clicks the "Register" from dropdown menu...........................passed
-And User scrolls down the page..............................................passed
-And User enter to password text box five lowercase "invalid_password1" and presses tab.passed
-Then User sees invalid password message "password_should_contain_at_least" und.passed
-Then User sees on the password strenght bar red colour......................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="36.436">
+<testcase classname="Login page should accessible with valid credentials" name="TC_001_There should be a valid username and password validating the success message to login" time="17.313">
+<system-out><![CDATA[When user goes home page "GMIBank_Url"......................................passed
+And user clicks Sign in dropdown menu.......................................passed
+And user clicks Sign in link................................................passed
+And user enter a "valid_username" to username textbox.......................passed
+And user enters a "valid_password" to password textbox......................passed
+And user clicks Sign In button..............................................passed
+Then user sees My Operations link...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page should accessible with valid credentials" name="TC_002_There should be an option to cancel login" time="18.85">
+<system-out><![CDATA[When user goes home page "GMIBank_Url"......................................passed
+And user clicks Sign in dropdown menu.......................................passed
+And user clicks Sign in link................................................passed
+And user enter a "valid_username" to username textbox.......................passed
+And user enters a "valid_password" to password textbox......................passed
+And user clicks Cancel button...............................................passed
+Then user sees  Sign In dropdown link.......................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
