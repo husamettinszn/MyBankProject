@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="36.436">
-<testcase classname="Login page should accessible with valid credentials" name="TC_001_There should be a valid username and password validating the success message to login" time="17.313">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="43.632">
+<testcase classname="Login page should accessible with valid credentials" name="TC_001_There should be a valid username and password validating the success message to login" time="28.961">
 <system-out><![CDATA[When user goes home page "GMIBank_Url"......................................passed
 And user clicks Sign in dropdown menu.......................................passed
 And user clicks Sign in link................................................passed
@@ -10,7 +10,7 @@ And user clicks Sign In button..............................................pass
 Then user sees My Operations link...........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login page should accessible with valid credentials" name="TC_002_There should be an option to cancel login" time="18.85">
+<testcase classname="Login page should accessible with valid credentials" name="TC_002_There should be an option to cancel login" time="14.347">
 <system-out><![CDATA[When user goes home page "GMIBank_Url"......................................passed
 And user clicks Sign in dropdown menu.......................................passed
 And user clicks Sign in link................................................passed
