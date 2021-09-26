@@ -8,5 +8,5 @@ Feature:US_005_Login page should not be accessible with invalid credentials
   Then user enters an "invalid_username" to username text box.
   Then user enters a "valid_passwordd" to password text box.
   Then user clicks Sign In button
-  And user sees an "error_message".
+  And user sees an error_message.
 

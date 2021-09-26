@@ -1,29 +1,52 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
+        "start_timestamp": "2021-09-26T18:53:38.422Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setup()"
+            }
+          }
+        ],
         "line": 4,
-        "name": "",
+        "name": "TC_001_User cannot login with invalid username validating the error message",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
+        "id": "us-005-login-page-should-not-be-accessible-with-invalid-credentials;tc-001-user-cannot-login-with-invalid-username-validating-the-error-message",
+        "after": [
+          {
+            "result": {
+              "duration": 2281000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 22544000000,
+              "duration": 11928000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "user goes home page \"GMIBank_Url\"",
+            "name": "user goes to \"GmiBank_HomePage\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"GMIBank_Url\"",
-                  "offset": 20
+                  "val": "\"GmiBank_HomePage\"",
+                  "offset": 13
                 }
               ],
-              "location": "stepdefinitions.US_004StepDefinitions.userGoesHomePage(java.lang.String)"
+              "location": "stepdefinitions.US_005StepDefinitions.userGoesTo(java.lang.String)"
             },
             "keyword": "When "
           },
@@ -33,287 +56,97 @@
               "status": "passed"
             },
             "line": 6,
-            "name": "user clicks Sign in dropdown menu",
+            "name": "user clicks Sign In dropdown menu",
             "match": {
-              "location": "stepdefinitions.US_004StepDefinitions.user_clicks_sign_in_dropdown_menu()"
+              "location": "stepdefinitions.US_005StepDefinitions.userClicksSignInDropdownMenu()"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 149000000,
+              "duration": 125000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "user clicks Sign in link",
+            "name": "user clicks Sign In link.",
             "match": {
-              "location": "stepdefinitions.US_004StepDefinitions.user_clicks_sign_in_link()"
+              "location": "stepdefinitions.US_005StepDefinitions.userClicksSignInLink()"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 110000000,
+              "duration": 111000000,
               "status": "passed"
             },
             "line": 8,
-            "name": "user enter a \"valid_username\" to username textbox",
+            "name": "user enters an \"invalid_username\" to username text box.",
             "match": {
               "arguments": [
                 {
-                  "val": "\"valid_username\"",
-                  "offset": 13
+                  "val": "\"invalid_username\"",
+                  "offset": 15
                 }
               ],
-              "location": "stepdefinitions.US_004StepDefinitions.userEnterAToUsernameTextbox(java.lang.String)"
+              "location": "stepdefinitions.US_005StepDefinitions.userEntersAnToUsernameTextBox(java.lang.String)"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 145000000,
+              "duration": 1135000000,
               "status": "passed"
             },
             "line": 9,
-            "name": "user enters a \"valid_password\" to password textbox",
+            "name": "user enters a \"valid_passwordd\" to password text box.",
             "match": {
               "arguments": [
                 {
-                  "val": "\"valid_password\"",
+                  "val": "\"valid_passwordd\"",
                   "offset": 14
                 }
               ],
-              "location": "stepdefinitions.US_004StepDefinitions.userEntersAToPasswordTextbox(java.lang.String)"
+              "location": "stepdefinitions.US_005StepDefinitions.userEntersAToPasswordTextBox(java.lang.String)"
             },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-09-25T17:48:51.024Z",
-        "before": [
+            "keyword": "Then "
+          },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 3186000000,
               "status": "passed"
             },
-            "match": {
-              "location": "stepdefinitions.Hooks.setup()"
-            }
-          }
-        ],
-        "line": 11,
-        "name": "TC_001_There should be a valid username and password validating the success message to login",
-        "description": "",
-        "id": "login-page-should-accessible-with-valid-credentials;tc-001-there-should-be-a-valid-username-and-password-validating-the-success-message-to-login",
-        "after": [
-          {
-            "result": {
-              "duration": 2651000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 3125000000,
-              "status": "passed"
-            },
-            "line": 13,
+            "line": 10,
             "name": "user clicks Sign In button",
             "match": {
               "location": "stepdefinitions.US_004StepDefinitions.userClicksSignInButton()"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 64000000,
+              "duration": 1000000,
               "status": "passed"
             },
-            "line": 14,
-            "name": "user sees My Operations link",
+            "line": 11,
+            "name": "user sees an error_message.",
             "match": {
-              "location": "stepdefinitions.US_004StepDefinitions.user_sees_my_operations_link()"
+              "location": "stepdefinitions.US_005StepDefinitions.userSeesAnError_message()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@login"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 11030000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user goes home page \"GMIBank_Url\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"GMIBank_Url\"",
-                  "offset": 20
-                }
-              ],
-              "location": "stepdefinitions.US_004StepDefinitions.userGoesHomePage(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 92000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user clicks Sign in dropdown menu",
-            "match": {
-              "location": "stepdefinitions.US_004StepDefinitions.user_clicks_sign_in_dropdown_menu()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 130000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user clicks Sign in link",
-            "match": {
-              "location": "stepdefinitions.US_004StepDefinitions.user_clicks_sign_in_link()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 95000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user enter a \"valid_username\" to username textbox",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"valid_username\"",
-                  "offset": 13
-                }
-              ],
-              "location": "stepdefinitions.US_004StepDefinitions.userEnterAToUsernameTextbox(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 132000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user enters a \"valid_password\" to password textbox",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"valid_password\"",
-                  "offset": 14
-                }
-              ],
-              "location": "stepdefinitions.US_004StepDefinitions.userEntersAToPasswordTextbox(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-09-25T17:49:20.011Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.setup()"
-            }
-          }
-        ],
-        "line": 16,
-        "name": "TC_002_There should be an option to cancel login",
-        "description": "",
-        "id": "login-page-should-accessible-with-valid-credentials;tc-002-there-should-be-an-option-to-cancel-login",
-        "after": [
-          {
-            "result": {
-              "duration": 2658000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 157000000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user clicks Cancel button",
-            "match": {
-              "location": "stepdefinitions.US_004StepDefinitions.userClicksCancelButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 48000000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "user sees  Sign In dropdown link",
-            "match": {
-              "location": "stepdefinitions.US_004StepDefinitions.userSeesSignInDropdownLink()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
+            "name": "@invalid"
           }
         ]
       }
     ],
-    "name": "Login page should accessible with valid credentials",
+    "name": "US_005_Login page should not be accessible with invalid credentials",
     "description": "",
-    "id": "login-page-should-accessible-with-valid-credentials",
+    "id": "us-005-login-page-should-not-be-accessible-with-invalid-credentials",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US_004Login%20page%20should%20accessible%20with%20valid%20credentials%20.feature",
-    "tags": [
-      {
-        "name": "@login",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/US_005Login%20page%20should%20not%20be%20accessible%20with%20invalid%20credentials%20%20%20%20%20i.feature",
+    "tags": []
   }
 ]
