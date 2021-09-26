@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="43.632">
-<testcase classname="Login page should accessible with valid credentials" name="TC_001_There should be a valid username and password validating the success message to login" time="28.961">
-<system-out><![CDATA[When user goes home page "GMIBank_Url"......................................passed
-And user clicks Sign in dropdown menu.......................................passed
-And user clicks Sign in link................................................passed
-And user enter a "valid_username" to username textbox.......................passed
-And user enters a "valid_password" to password textbox......................passed
-And user clicks Sign In button..............................................passed
-Then user sees My Operations link...........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Login page should accessible with valid credentials" name="TC_002_There should be an option to cancel login" time="14.347">
-<system-out><![CDATA[When user goes home page "GMIBank_Url"......................................passed
-And user clicks Sign in dropdown menu.......................................passed
-And user clicks Sign in link................................................passed
-And user enter a "valid_username" to username textbox.......................passed
-And user enters a "valid_password" to password textbox......................passed
-And user clicks Cancel button...............................................passed
-Then user sees  Sign In dropdown link.......................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.205">
+<testcase classname="US_005_Login page should not be accessible with invalid credentials" name="TC_001_User cannot login with invalid username validating the error message" time="18.923">
+<system-out><![CDATA[When user goes to "GmiBank_HomePage"........................................passed
+Then user clicks Sign In dropdown menu......................................passed
+Then user clicks Sign In link...............................................passed
+Then user enters an "invalid_username" to username text box.................passed
+Then user enters a "valid_passwordd" to password text box...................passed
+Then user clicks Sign In button.............................................passed
+And user sees an error_message..............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
