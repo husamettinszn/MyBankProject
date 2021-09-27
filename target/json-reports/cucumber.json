@@ -3,41 +3,18 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-09-26T18:53:38.422Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.setup()"
-            }
-          }
-        ],
-        "line": 4,
-        "name": "TC_001_User cannot login with invalid username validating the error message",
+        "line": 3,
+        "name": "",
         "description": "",
-        "id": "us-005-login-page-should-not-be-accessible-with-invalid-credentials;tc-001-user-cannot-login-with-invalid-username-validating-the-error-message",
-        "after": [
-          {
-            "result": {
-              "duration": 2281000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 11928000000,
+              "duration": 15519000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 4,
             "name": "user goes to \"GmiBank_HomePage\"",
             "match": {
               "arguments": [
@@ -52,10 +29,10 @@
           },
           {
             "result": {
-              "duration": 91000000,
+              "duration": 85000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 5,
             "name": "user clicks Sign In dropdown menu",
             "match": {
               "location": "stepdefinitions.US_005StepDefinitions.userClicksSignInDropdownMenu()"
@@ -64,22 +41,54 @@
           },
           {
             "result": {
-              "duration": 125000000,
+              "duration": 116000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "user clicks Sign In link.",
             "match": {
               "location": "stepdefinitions.US_005StepDefinitions.userClicksSignInLink()"
             },
             "keyword": "Then "
-          },
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-27T15:28:46.978Z",
+        "before": [
           {
             "result": {
-              "duration": 111000000,
               "status": "passed"
             },
-            "line": 8,
+            "match": {
+              "location": "stepdefinitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "TC_004_User with invalid credentials should be given an option to reset their password",
+        "description": "",
+        "id": "us-005-login-page-should-not-be-accessible-with-invalid-credentials;tc-004-user-with-invalid-credentials-should-be-given-an-option-to-reset-their-password",
+        "after": [
+          {
+            "result": {
+              "duration": 2295000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 100000000,
+              "status": "passed"
+            },
+            "line": 40,
             "name": "user enters an \"invalid_username\" to username text box.",
             "match": {
               "arguments": [
@@ -94,15 +103,15 @@
           },
           {
             "result": {
-              "duration": 1135000000,
+              "duration": 113000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "user enters a \"valid_passwordd\" to password text box.",
+            "line": 41,
+            "name": "user enters a \"invalid_password\" to password text box.",
             "match": {
               "arguments": [
                 {
-                  "val": "\"valid_passwordd\"",
+                  "val": "\"invalid_password\"",
                   "offset": 14
                 }
               ],
@@ -112,10 +121,10 @@
           },
           {
             "result": {
-              "duration": 3186000000,
+              "duration": 3181000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 42,
             "name": "user clicks Sign In button",
             "match": {
               "location": "stepdefinitions.US_004StepDefinitions.userClicksSignInButton()"
@@ -124,13 +133,31 @@
           },
           {
             "result": {
-              "duration": 1000000,
+              "duration": 188000000,
               "status": "passed"
             },
-            "line": 11,
-            "name": "user sees an error_message.",
+            "line": 43,
+            "name": "clicks sees New Account Register link",
             "match": {
-              "location": "stepdefinitions.US_005StepDefinitions.userSeesAnError_message()"
+              "location": "stepdefinitions.US_005StepDefinitions.clicksSeesNewAccountRegisterLink()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 59000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "user goes Registration Page \"registiration_page\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"registiration_page\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefinitions.US_005StepDefinitions.userGoesRegistrationPage(java.lang.String)"
             },
             "keyword": "And "
           }

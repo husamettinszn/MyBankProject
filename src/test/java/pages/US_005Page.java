@@ -25,4 +25,13 @@ public class US_005Page {
 
     @FindBy(xpath = "//div[@class='alert alert-danger fade show']")
     public WebElement error_message;
+
+    @FindBy(xpath = "//div[@class='alert alert-warning fade show']")
+    public WebElement passwordRest_message;
+
+    @FindBy(xpath = "//button[@class='btn btn-primary']")
+    public WebElement resetPassword_button;
+
+    @FindBy(xpath = "(//a[@href='/account/register'])[2]")
+    public  WebElement registerNewAccount_link;
 }
