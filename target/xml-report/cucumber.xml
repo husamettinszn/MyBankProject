@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.205">
-<testcase classname="US_005_Login page should not be accessible with invalid credentials" name="TC_001_User cannot login with invalid username validating the error message" time="18.923">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="22.01">
+<testcase classname="US_005_Login page should not be accessible with invalid credentials" name="TC_004_User with invalid credentials should be given an option to reset their password" time="21.723">
 <system-out><![CDATA[When user goes to "GmiBank_HomePage"........................................passed
 Then user clicks Sign In dropdown menu......................................passed
 Then user clicks Sign In link...............................................passed
 Then user enters an "invalid_username" to username text box.................passed
-Then user enters a "valid_passwordd" to password text box...................passed
+Then user enters a "invalid_password" to password text box..................passed
 Then user clicks Sign In button.............................................passed
-And user sees an error_message..............................................passed
+Then clicks sees New Account Register link..................................passed
+And user goes Registration Page "registiration_page"........................passed
 ]]></system-out>
 </testcase>
 </testsuite>

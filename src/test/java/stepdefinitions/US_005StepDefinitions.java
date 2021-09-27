@@ -37,11 +37,53 @@ public class US_005StepDefinitions {
     public void userEntersAToPasswordTextBox(String valid_passwordd) {
         us_005Page.password_textBox.sendKeys(ConfigReader.getProperty(valid_passwordd));
 
+
     }
 
 
     @And("user sees an {string}.")
     public void userSeesAn(String error_message) {
-        Assert.assertTrue(ConfigReader.getProperty(error_message), us_005Page.error_message.getText);
+         System.out.println(us_005Page.error_message.getText());
+        System.out.println(ConfigReader.getProperty(error_message));
+         Assert.assertEquals(us_005Page.error_message.getText(), ConfigReader.getProperty(error_message));
+    }
+
+    @Then("user enter a {string} to username textbox.")
+    public void userEnterAToUsernameTextbox(String valid_username1) {
+        us_005Page.username_textBox.sendKeys(ConfigReader.getProperty(valid_username1));
+    }
+
+    @Then("user enters an {string} to passwor text box.")
+    public void userEntersAnToPassworTextBox(String invalid_password) {
+        us_005Page.password_textBox.sendKeys(invalid_password);
+    }
+
+    @Then("user sees a {string}.")
+    public void userSeesA(String passwordReset_message) {
+        System.out.println(us_005Page.passwordRest_message.getText());
+        Assert.assertTrue(us_005Page.passwordRest_message.isDisplayed());
+    }
+
+    @Then("user clicks passwordReset_link.")
+    public void userClicksPasswordReset_link() {
+        us_005Page.passwordRest_message.click();
+    }
+
+    @And("user sees Password Reset button is clickable.")
+    public void userSeesPasswordResetButtonIsClickable() {
+        Assert.assertTrue(us_005Page.resetPassword_button.isEnabled());
+
+    }
+
+    @Then("clicks sees New Account Register link")
+    public void clicksSeesNewAccountRegisterLink() {
+        us_005Page.registerNewAccount_link.click();
+    }
+
+    @And("user goes Registration Page {string}")
+    public void userGoesRegistrationPage(String registiration_page) {
+        System.out.println(ConfigReader.getProperty(registiration_page));
+        System.out.println(Driver.getDriver().getCurrentUrl());
+        Assert.assertEquals(ConfigReader.getProperty(registiration_page), Driver.getDriver().getCurrentUrl());
     }
 }
