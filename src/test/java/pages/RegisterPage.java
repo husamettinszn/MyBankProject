@@ -48,8 +48,23 @@ public class RegisterPage {
     @FindBy(xpath = "(//div[@class='invalid-feedback'])[1]")
     public WebElement errorMessage;
 
-    @FindBy(xpath = "(//li[@class='point'])[1]")
-    public WebElement redBar;
+    @FindBy(xpath = "(//li[@style='background-color: rgb(255, 255, 0);'])[1]")
+    public WebElement firstBar;
+
+    @FindBy(xpath = "(//li[@style='background-color: rgb(255, 255, 0);'])[2]")
+    public WebElement secondBar;
+
+    @FindBy(xpath = "(//li[@style='background-color: rgb(255, 255, 0);'])[3]")
+    public WebElement thirdBar;
+
+    @FindBy(xpath = "(//li[@style='background-color: rgb(255, 255, 0);'])[4]")
+    public WebElement fourthBar;
+
+    @FindBy(xpath = "(//li[@style='background-color: rgb(0, 255, 0);'])[5]")
+    public WebElement fifthBarGreen;
+
+    @FindBy(xpath = "(//li[@style='background-color: rgb(221, 221, 221);'])[2]")
+    public WebElement fifthBarGrau;
 
 
 }

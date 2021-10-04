@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="22.01">
-<testcase classname="US_005_Login page should not be accessible with invalid credentials" name="TC_004_User with invalid credentials should be given an option to reset their password" time="21.723">
-<system-out><![CDATA[When user goes to "GmiBank_HomePage"........................................passed
-Then user clicks Sign In dropdown menu......................................passed
-Then user clicks Sign In link...............................................passed
-Then user enters an "invalid_username" to username text box.................passed
-Then user enters a "invalid_password" to password text box..................passed
-Then user clicks Sign In button.............................................passed
-Then clicks sees New Account Register link..................................passed
-And user goes Registration Page "registiration_page"........................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="17.839">
+<testcase classname="US_003 Registration page should restrict password usage to a secure" name="TC_001 There should be at least one lowercase char for stronger password and" time="17.543">
+<system-out><![CDATA[When User goes to "GmiBank_url" Homepage....................................passed
+And User clicks the "Register" from dropdown menu...........................passed
+And User scrolls down the page..............................................passed
+And User enters to password text a password "invalid_password1" that contains six character, at leats an uppercase a digit aspecial character.passed
+And user sees not last green bar............................................passed
+And user enters a lowercase "lowerCase" character...........................passed
+Then user sees last green bar...............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

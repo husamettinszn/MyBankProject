@@ -10,6 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 import pages.RegisterPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class US_003StepDefinitions {
     RegisterPage registerPage = new RegisterPage();
@@ -21,20 +22,27 @@ public class US_003StepDefinitions {
         actions.sendKeys(Keys.PAGE_DOWN).perform();
 
     }
+    @And("User enters to password text a password {string} that contains six character, at leats an uppercase a digit aspecial character")
+    public void userEntersToPasswordTextAPasswordThatContainsSixCharacterAtLeatsAnUppercaseADigitAspecialCharacter(String invalid_password1) {
 
-    @Then("User sees invalid password message {string} und")
-    public void user_sees_invalid_password_message_und(String password_should_contain_at_least) {
-        Assert.assertEquals(ConfigReader.getProperty(password_should_contain_at_least), registerPage.errorMessage.getText());
-    }
-
-    @Then("User sees on the password strenght bar red colour")
-    public void user_sees_on_the_password_strenght_bar_red_colour() {
-        Assert.assertTrue(registerPage.redBar.isDisplayed());
-    }
-
-    @And("User enter to password text box five lowercase {string} and presses tab")
-    public void userEnterToPasswordTextBoxFiveLowercaseAndPressesTab(String invalid_password1) {
         registerPage.firstPasswordTextBox.sendKeys(ConfigReader.getProperty(invalid_password1));
-        actions.sendKeys(Keys.TAB).perform();
     }
+
+    @And("user sees not last green bar")
+    public void userSeesNotLastGreenBar() {
+        ReusableMethods.waitFor(2);
+        Assert.assertTrue(registerPage.fifthBarGrau.isDisplayed());
+    }
+
+    @And("user enters a lowercase {string} character")
+    public void userEntersALowercaseCharacter(String lowerCase) {
+        registerPage.firstPasswordTextBox.sendKeys(ConfigReader.getProperty(lowerCase));
+    }
+
+    @Then("user sees last green bar")
+    public void userSeesLastGreenBar() {
+        Assert.assertTrue(registerPage.fifthBarGreen.isDisplayed());
+    }
+
+
 }
