@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
+        "line": 4,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,53 +11,48 @@
         "steps": [
           {
             "result": {
-              "duration": 15519000000,
+              "duration": 12474000000,
               "status": "passed"
             },
-            "line": 4,
-            "name": "user goes to \"GmiBank_HomePage\"",
+            "line": 5,
+            "name": "User goes to \"GmiBank_url\" Homepage",
             "match": {
               "arguments": [
                 {
-                  "val": "\"GmiBank_HomePage\"",
+                  "val": "\"GmiBank_url\"",
                   "offset": 13
                 }
               ],
-              "location": "stepdefinitions.US_005StepDefinitions.userGoesTo(java.lang.String)"
+              "location": "stepdefinitions.US_002StepDefinitions.userGoesToHomepage(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 85000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user clicks Sign In dropdown menu",
-            "match": {
-              "location": "stepdefinitions.US_005StepDefinitions.userClicksSignInDropdownMenu()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 116000000,
+              "duration": 259000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "user clicks Sign In link.",
+            "name": "User clicks the \"Register\" from dropdown menu",
             "match": {
-              "location": "stepdefinitions.US_005StepDefinitions.userClicksSignInLink()"
+              "arguments": [
+                {
+                  "val": "\"Register\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.US_002StepDefinitions.userClicksTheFromDropdownMenu(java.lang.String)"
             },
-            "keyword": "Then "
+            "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2021-09-27T15:28:46.978Z",
+        "start_timestamp": "2021-10-04T17:37:29.872Z",
         "before": [
           {
             "result": {
+              "duration": 16000000,
               "status": "passed"
             },
             "match": {
@@ -65,14 +60,14 @@
             }
           }
         ],
-        "line": 39,
-        "name": "TC_004_User with invalid credentials should be given an option to reset their password",
-        "description": "",
-        "id": "us-005-login-page-should-not-be-accessible-with-invalid-credentials;tc-004-user-with-invalid-credentials-should-be-given-an-option-to-reset-their-password",
+        "line": 8,
+        "name": "TC_001 There should be at least one lowercase char for stronger password and",
+        "description": "  see the level chart change accordingly",
+        "id": "us-003-registration-page-should-restrict-password-usage-to-a-secure;tc-001-there-should-be-at-least-one-lowercase-char-for-stronger-password-and",
         "after": [
           {
             "result": {
-              "duration": 2295000000,
+              "duration": 2290000000,
               "status": "passed"
             },
             "match": {
@@ -85,95 +80,89 @@
         "steps": [
           {
             "result": {
-              "duration": 100000000,
+              "duration": 87000000,
               "status": "passed"
             },
-            "line": 40,
-            "name": "user enters an \"invalid_username\" to username text box.",
+            "line": 10,
+            "name": "User scrolls down the page",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"invalid_username\"",
-                  "offset": 15
-                }
-              ],
-              "location": "stepdefinitions.US_005StepDefinitions.userEntersAnToUsernameTextBox(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 113000000,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "user enters a \"invalid_password\" to password text box.",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"invalid_password\"",
-                  "offset": 14
-                }
-              ],
-              "location": "stepdefinitions.US_005StepDefinitions.userEntersAToPasswordTextBox(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3181000000,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "user clicks Sign In button",
-            "match": {
-              "location": "stepdefinitions.US_004StepDefinitions.userClicksSignInButton()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 188000000,
-              "status": "passed"
-            },
-            "line": 43,
-            "name": "clicks sees New Account Register link",
-            "match": {
-              "location": "stepdefinitions.US_005StepDefinitions.clicksSeesNewAccountRegisterLink()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 59000000,
-              "status": "passed"
-            },
-            "line": 44,
-            "name": "user goes Registration Page \"registiration_page\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"registiration_page\"",
-                  "offset": 28
-                }
-              ],
-              "location": "stepdefinitions.US_005StepDefinitions.userGoesRegistrationPage(java.lang.String)"
+              "location": "stepdefinitions.US_003StepDefinitions.user_scrolls_down_the_page()"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 172000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enters to password text a password \"invalid_password1\" that contains six character, at leats an uppercase a digit aspecial character",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid_password1\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefinitions.US_003StepDefinitions.userEntersToPasswordTextAPasswordThatContainsSixCharacterAtLeatsAnUppercaseADigitAspecialCharacter(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2083000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user sees not last green bar",
+            "match": {
+              "location": "stepdefinitions.US_003StepDefinitions.userSeesNotLastGreenBar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user enters a lowercase \"lowerCase\" character",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"lowerCase\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.US_003StepDefinitions.userEntersALowercaseCharacter(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user sees last green bar",
+            "match": {
+              "location": "stepdefinitions.US_003StepDefinitions.userSeesLastGreenBar()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@invalid"
+            "name": "@register"
           }
         ]
       }
     ],
-    "name": "US_005_Login page should not be accessible with invalid credentials",
-    "description": "",
-    "id": "us-005-login-page-should-not-be-accessible-with-invalid-credentials",
+    "name": "US_003 Registration page should restrict password usage to a secure",
+    "description": "  and high level passcode",
+    "id": "us-003-registration-page-should-restrict-password-usage-to-a-secure",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US_005Login%20page%20should%20not%20be%20accessible%20with%20invalid%20credentials%20%20%20%20%20i.feature",
+    "uri": "file:src/test/resources/features/US_003Registration%20page%20should%20restrict%20password%20usage%20to%20a%20secure%20%20%20and%20high%20level%20passcode.feature",
     "tags": []
   }
 ]
